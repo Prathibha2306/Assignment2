@@ -1,15 +1,15 @@
 import React from 'react';
-import { useCart } from './CartContext'; // Make sure the CartContext is providing the correct data
+import { useCart } from './CartContext';
 
 const Cart = () => {
-  const { getCartItems, removeFromCart } = useCart(); // Get cart items and remove functionality
-  const cartItems = getCartItems(); // Get the list of items from the cart
+  const { getCartItems, removeFromCart } = useCart(); 
+  const cartItems = getCartItems(); 
 
   return (
     <div className="cart">
       <h2>Your Cart</h2>
       {cartItems.length === 0 ? (
-        <p>Your cart is empty</p> // Display message when cart is empty
+        <p>Your cart is empty</p> 
       ) : (
         <ul>
           {cartItems.map((cake, index) => (

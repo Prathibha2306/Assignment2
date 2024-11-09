@@ -1,25 +1,23 @@
-// src/components/CakeDetails.jsx
-
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { useCart } from './CartContext'; // Import useCart to access cart methods
+import { useCart } from './CartContext';
 
 const CakeDetails = ({ cakes }) => {
   const { id } = useParams();
-  const { addToCart } = useCart(); // Access addToCart function from context
+  const { addToCart } = useCart();
   const [cake, setCake] = useState(null);
 
   useEffect(() => {
     const selectedCake = cakes.find((cake) => cake.id === parseInt(id));
-    setCake(selectedCake); // Set the selected cake
+    setCake(selectedCake);
   }, [id, cakes]);
 
   if (!cake) {
-    return <div>Cake not found</div>; // Handle case where the cake is not found
+    return <div>Cake not found</div>;
   }
 
   const handleAddToCart = () => {
-    addToCart(cake); // Add cake to the cart
+    addToCart(cake);
   };
 
   return (

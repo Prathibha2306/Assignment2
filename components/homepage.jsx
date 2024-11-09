@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Link to navigate to CakeDetails
-import { cakes } from '../data/cakesData';  // Import cakes data
+import { Link } from 'react-router-dom'; 
+import { cakes } from '../data/cakesData';  
 
 const Homepage = () => {
   return (

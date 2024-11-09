@@ -1,20 +1,18 @@
-// src/App.js
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { CartProvider } from './components/CartContext'; // Import CartProvider
+import { CartProvider } from './components/CartContext';
 import Homepage from './components/homepage';
 import CakeDetails from './components/CakeDetails';
 import Cart from './components/Cart';
 import ContactUs from './components/ContactUs';
-import Navbar from './components/Navbar'; // Import Navbar
-import { cakes } from './data/cakesData';  // Import cakes data
+import Navbar from './components/Navbar';
+import { cakes } from './data/cakesData';
 
 function App() {
   return (
-    <CartProvider>  {/* Wrap your app with CartProvider */}
+    <CartProvider> 
       <Router>
-        <Navbar />  {/* Show the Navbar globally */}
+        <Navbar /> 
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/cake-details/:id" element={<CakeDetails cakes={cakes} />} />

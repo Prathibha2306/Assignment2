@@ -1,5 +1,3 @@
-// src/components/ContactUs.jsx
-
 import React, { useState } from 'react';
 import './ContactUs.css';
 
@@ -10,7 +8,6 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can add form submission logic here (e.g., sending data to a server)
     alert(`Thank you for your message, ${name}!`);
   };
 
