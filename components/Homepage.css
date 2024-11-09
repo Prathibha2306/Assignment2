@@ -1,0 +1,86 @@
+.homepage {
+  background-image: url('/assets/choco.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.992); 
+  text-align: center;
+  padding-top: 80px; 
+
+.hero {
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.featured-cakes {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 10px;
+  max-width: 80%;
+  margin-bottom: 40px;
+}
+
+.featured-cakes h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cake-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cake-card {
+  background-color: white;
+  border-radius: 10px;
+  width: 250px;
+  margin: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cake-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.cake-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.cake-card p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6f61; /* Button color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #e55e4b; /* Darker shade on hover */
+}  

@@ -1,0 +1,15 @@
+.cake-details {
+    padding: 20px;
+  }
+  
+  .cake-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .cake-gallery img {
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
